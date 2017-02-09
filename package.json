@@ -1,0 +1,41 @@
+{
+  "name": "treeql.core",
+  "version": "0.0.0",
+  "description": "compiler and runtime of TreeQL",
+  "main": "bin/tree.ql.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha --compilers js:babel-register --slow 300 --recursive src/**/__tests__/**/*_test.js -w",
+    "build": "node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:treeql/treeql.core.git"
+  },
+  "keywords": [
+    "TreeQL"
+  ],
+  "author": "Ali Najafizadeh",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/treeql/treeql.core/issues"
+  },
+  "homepage": "https://github.com/treeql/treeql.core",
+  "devDependencies": {
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
+    "babel-plugin-syntax-async-functions": "6.13.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-flow-strip-types": "6.8.0",
+    "babel-plugin-transform-regenerator": "6.22.0",
+    "babel-polyfill": "6.22.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-stage-1": "6.16.0",
+    "babel-register": "6.22.0",
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "webpack": "2.2.1"
+  },
+  "dependencies": {
+    
+  }
+}

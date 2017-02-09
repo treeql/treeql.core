@@ -1,0 +1,22 @@
+[ignore]
+.*/src/legacy/.*
+
+[include]
+.*/src/.*
+
+[libs]
+./interfaces/
+
+[options]
+esproposal.class_static_fields=enable
+esproposal.decorators=ignore
+esproposal.class_instance_fields=enable
+unsafe.enable_getters_and_setters=true
+
+# Keep aliases consistent with webpack config.
+
+module.name_mapper='^\(src\|interfaces\)\/\(.*\)$' -> '<PROJECT_ROOT>/\1/\2'
+
+module.name_mapper='^ast/\(.*\)$' -> '<PROJECT_ROOT>/\src/\ast/\1'
+module.name_mapper='^compiler/\(.*\)$' -> '<PROJECT_ROOT>/\src/\compiler/\1'
+module.name_mapper='^runtime/\(.*\)$' -> '<PROJECT_ROOT>/\src/\runtime/\1'
